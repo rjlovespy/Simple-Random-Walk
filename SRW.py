@@ -40,7 +40,7 @@ walk, = canvas.plot(x[0],y[0], color="blue")
 
 
 def journey(i):
-    drunkard.set_data(x[i],y[i])           # Here, x[1] in set_data function is equivalent to x[0] in list because frames always start from 1
+    drunkard.set_data(x[i],y[i])           
     step.set_data(x[:i+1],y[:i+1])            
     walk.set_data(x[:i+1],y[:i+1])
     return drunkard, step, walk,
